@@ -710,7 +710,7 @@ onValue(konfirmasiQuery, (snapshot) => {
     const shareBtn = document.getElementById('share');
 
     const frame = new Image();
-    frame.src = '/twbmdt.png'; // pastikan path benar
+    frame.src = './twbmdt.png'; // pastikan path benar
     let frameReady = false;
     frame.onload = () => { frameReady = true; draw(); };
 
@@ -897,4 +897,5 @@ https://domainmu.com/`;
     }
 
   });
+
 
