@@ -864,7 +864,7 @@ onValue(konfirmasiQuery, (snapshot) => {
     const shareText = `🌿✨ Yuk rayakan momen istimewa Haflah & Wisuda Santri MDT Al-Ikhwan Margasari! 
 Saya sudah pasang overlay foto, giliran kamu sekarang 😍📸
 Buka undangannya di sini 👇
-https://domainmu.com/`;
+https://mdt-alikhwann.github.io/undangan-haflah`;
 
     if (navigator.canShare && navigator.canShare({ files: [file] })) {
       try {
@@ -872,14 +872,14 @@ https://domainmu.com/`;
           title: shareTitle,
           text: shareText,
           files: [file],
-          url: 'https://domainmu.com/',
+          url: 'https://mdt-alikhwann.github.io/undangan-haflah',
         });
       } catch (err) {
         console.warn('Share dibatalkan:', err);
       }
     } else {
       // Fallback jika browser tidak mendukung Web Share API dengan file
-      const shareUrl = 'https://domainmu.com/';
+      const shareUrl = 'https://mdt-alikhwann.github.io/undangan-haflah';
       const fallbackText = `${shareText}\n\n${shareUrl}`;
       if (navigator.share) {
         try {
@@ -897,5 +897,6 @@ https://domainmu.com/`;
     }
 
   });
+
 
 
