@@ -161,7 +161,7 @@ onValue(rsvpQuery, (snapshot) => {
           const waktuTampil = formatRelativeTime(data.waktu);
 
           const card = `
-  <div class="col-md-6 fade-up duration-2">
+  <div class="col-12 fade-up duration-2">
     <div class="card shadow-sm border-1 bg-${badgeClass}-subtle" 
          style="border-radius:10px;" 
          data-key="${data.key}">
@@ -441,7 +441,7 @@ onValue(konfirmasiQuery, (snapshot) => {
           const waktuTampil = formatRelativeTime(data.waktu);
 
           const card = `
-  <div class="col-md-6 fade-up duration-2">
+  <div class="col-12 fade-up duration-2">
     <div class="card my-2 shadow-sm border-1 bg-ijo-subtle" data-key="${data.key}" style="border-radius:7px;">
       <div class="card-body p-2">
         <div class="container">
@@ -498,4 +498,5 @@ onValue(konfirmasiQuery, (snapshot) => {
           sec.style.visibility = 'visible';
           sec.style.opacity = '1';
       });
+
   });
