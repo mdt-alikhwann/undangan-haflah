@@ -530,7 +530,7 @@ html {
  content: "";
  position: absolute;
  inset: 0;
- background-image: url(assets/img/bg.webp);
+ background-image: url("/undangan-haflah/assets/img/bg.webp");
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
@@ -725,7 +725,7 @@ html {
  position: absolute;
  width: 30px;
  height: 30px;
- background-image: url(assets/img/daun.webp);
+ background-image: url("/undangan-haflah/assets/img/daun.webp");
  background-size: cover;
  opacity: 0.8;
  pointer-events: none;
