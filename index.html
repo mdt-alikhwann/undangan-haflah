@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta property="og:title" content="Haflah & Wisuda Santri MDT Al-Ikhwan Margasari 🌿">
+        <meta property="og:description" content="Yuk rayakan momen penuh berkah bersama kami dalam acara Haflah dan Wisuda Santri MDT Al-Ikhwan Margasari. Klik untuk membuka undangan lengkapnya.">
+        <meta property="og:image" content="https://raw.githubusercontent.com/mdt-alikhwann/undangan-haflah/refs/heads/main/Oggambar.webp">
+        <meta property="og:url" content="https://mdt-alikhwann.github.io/undangan-haflah">
+        <meta property="og:type" content="website">
+        
+        <title>Undangan Haflah & Wisuda</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- ✅ Preload Fonts -->
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;600&family=Merriweather:wght@400;700&family=Alan+Sans:wght@300..900&display=swap" as="style">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;600&family=Merriweather:wght@400;700&family=Alan+Sans:wght@300..900&display=swap">
+        <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="preload" href="assets/css/style.css" as="style">
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+<i id="musicBtn" class="bi bi-play-fill"></i
+><i id="qrBtn" class="bi bi-qr-code-scan" data-bs-toggle="modal" data-bs-target="#qrModal"></i>
+
+<div class="modal fade" id="qrModal" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+            <div class="modal-header border-0 pb-0 pt-4">
+                <h4 class="modal-title w-100 latin mb-0 display-2 primary" id="qrModalLabel">Tamu Undangan</h4>
+            </div>
+            <div class="modal-body mt-0 pt-0">
+                <p class="font-besar abu">Haflah Akhirussanah<br />Wisuda MDT AL-IKHWAN</p>
+                <div id="qrcode"></div>
+                <p class="mt-3 mb-2 font-besar fw-bold secondary" id="qrNama"></p>
+                <p class="abu font-normal" id="qrWaktu"></p>
+            </div>
+        </div>
+    </div>
+</div>
+<audio id="bgMusic" src="assets/music/bg-music.mp3" loop></audio>
+<div id="loading">
+    <p>Memuat undangan...</p>
+    <div class="progress-container"><div class="progress-bar"></div></div>
+</div>
+<div id="leaf-wrapper"></div>
+<div id="curtain" class="curtain">
+    <img src="assets/img/pintu.webp" class="curtain-left curtain-kiri" />
+    <img src="assets/img/pintu.webp" class="curtain-right curtain-kanan" />
+</div>
+<div id="slides" class="slides">
+    <section class="slide" data-index="0">
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kanan fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kiri fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kanan fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kiri fade-down duration-5" />
+        <div class="latin display-1 mb-3 fade-down duration-5 primary">Undangan Haflah</div>
+        <p class="font-sedang alan secondary fade-down duration-5">
+            Akhirussanah & Wisuda Santri Angkatan VII Madrasah Diniyah Takmiliyah Al-Ikhwan Margasari, Sidareja
+        </p>
+        <div id="countdown" class="d-flex justify-content-center gap-2 mb-4"></div>
+        <div class="container-blur py-2 px-5 mx-2 font-normal primary fade-up duration-5">
+            Kepada Yth.<br />Bpk/Ibu/Saudara/i<br /><span
+                id="namatamu"
+                class="font-sedang alan text-capitalize primary fw-bold fade-up duration-5"
+                >Tamu Undangan</span
+            >
+        </div>
+        <a href="#salam" id="openBtn" class="mdt-btn mt-4 fade-up duration-5"
+            ><i class="bi bi-envelope-open me-2"></i>Buka Undangan</a
+        ><button
+            class="d-block btn btn-sm font-normal btn-outline-dark mt-4"
+            data-bs-toggle="modal"
+            data-bs-target="#qrModal"
+        >
+            <i class="bi bi-qr-code-scan me-1"></i>QR Tamu
+        </button>
+    </section>
+    <section class="slide" data-index="1" aria-label="Undangan Akhirussanah & Wisuda">
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kiri fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kanan fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kiri fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kanan fade-down duration-5" />
+        <span style="margin-top: -1.5rem;"
+            class="amiri primary inline-block mb-3 font-besar fade-down duration-2"
+            >بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</span
+        ><span class="latin fw-bold font-besar fade-up duration-1">Assalamu’alaikum Warahmatullahi Wabarakatuh</span
+        ><span class="alan font-sedang inline-block my-2 text-start fade-up duration-2" style="text-indent: 1em"
+            >Dengan memohon rahmat serta ridha Allah ﷻ, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara
+            sebagai berikut:</span
+        >
+        <div>
+            <table class="acara-table">
+                <tbody class="text-start alan font-sedang">
+                    <tr class="fade-up duration-2">
+                        <td><strong>Acara</strong></td>
+                        <td class="colon">:</td>
+                        <td>Akhirussanah & Wisuda Santri MDT Al-Ikhwan</td>
+                    </tr>
+                    <tr class="fade-up duration-3">
+                        <td><strong>Hari/Tgl</strong></td>
+                        <td class="colon">:</td>
+                        <td>Minggu, 21 Mei 2026</td>
+                    </tr>
+                    <tr class="fade-up duration-3">
+                        <td><strong>Tempat</strong></td>
+                        <td class="colon">:</td>
+                        <td>Masjid Al-Istiqomah Kandang Banteng</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <span class="fade-up duration-4 font-sedang inline-block text-start mt-2" style="text-indent: 1em"
+            >Acara ini sebagai bentuk penghargaan dan rasa syukur atas khatam nya santri dalam belajar membaca Al-Quran bin-Nadzr 30 Juz.</span
+        ><span class="fade-up duration-5 font-sedang inline-block text-start my-2" style="text-indent: 1em"
+            >Suatu kehormatan & kebahagiaan bagi kami dan para santri apabila Bapak/Ibu/Saudara/i berkenan hadir dan
+            memberikan doa restu untuk mereka. Atas perhatiannya dihaturkan Terima Kasih. </span
+        ><span class="latin fw-bold font-besar fade-up duration-5">Wassalamu’alaikum Warahmatullahi Wabarakatuh</span>
+    </section>
+    <section class="slide" data-index="2">
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kiri fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kanan fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kiri fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kanan fade-down duration-5" />
+        <section id="rundown" class="container my-5">
+          <p class="text-center mb-4 latin display-4 primary fade-down duration-4">
+            Rangkaian Acara
+          </p>
+        
+          <div id="timelineContainer" class="timeline container-section-overflow"></div>
+        </section>
+   
+    </section>
+    <section class="slide" data-index="3">
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kiri fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kanan fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kiri fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kanan fade-down duration-5" />
+        <section id="lokasi" class="">
+            <div class="container text-center">
+                <h2 class="mb-4 latin display-4 primary fade-down duration-4">Lokasi Acara</h2>
+                <p class="secondary font-sedang fade-up duration-2">Masjid Al-Istiqomah Kandang Banteng</p>
+                <div class="w-100 rounded rounded-2 shadow mb-4 fade-up duration-3">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15824.588405452441!2d108.74821665!3d-7.4489728500000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e658161608ff231%3A0x15cdd515bbcc8059!2sMasjid%20Al-Istiqomah%20Kandang%20Banteng!5e0!3m2!1sid!2sid!4v1759346172303!5m2!1sid!2sid"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+                <a
+                    href="https://maps.app.goo.gl/z4fnXFZGwS3w2QCi7"
+                    target="_blank"
+                    class="mdt-btn fade-up duration-4 d-inline-block"
+                    ><i class="bi bi-geo-fill me-2"></i>Petunjuk Arah</a
+                >
+            </div>
+        </section>
+    </section>
+    <section class="slide" data-index="8">
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kiri fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kanan fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kiri fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kanan fade-down duration-5" />
+        <section class="carousel-section w-100">
+            <h2 class="display-4 latin primary fade-up duration-3">Peserta Wisuda</h2>
+            <p class="mb-2 fade-up duration-4">
+                <span class="secondary font-sedang">Santri MDT AL-IKHWAN</span><br /><span class="abu font-normal"
+                    >Klik Foto untuk melihat sisi belakang</span
+                >
+            </p>
+            <div class="carousel-container">
+                <div id="card-wrapper" class="card-wrapper"></div>
+                <div class="carousel-controls fade-up duration-5">
+                    <button id="prevBtn" class="carousel-btn"><i class="bi bi-chevron-left"></i></button
+                    ><button id="nextBtn" class="carousel-btn"><i class="bi bi-chevron-right"></i></button>
+                </div>
+                <div id="dots" class="dots fade-up duration-5"></div>
+            </div>
+        </section>
+    </section>
+    <section class="slide" data-index="4">
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kiri fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kanan fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kiri fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kanan fade-down duration-5" />
+        <section id="infaq" class="container-section-overflow">
+            <div class="container">
+                <h2 class="mb-4 latin display-4 primary fade-down duration-5">Infaq & Shodaqoh</h2>
+                <p class="secondary font-sedang mb-2 fade-up duration-2">
+                    Pagi hari burung bernyanyi <br>
+                    Suara merdu menyejukkan hati<br>
+                    Mari berbagi untuk acara ini<br>
+                    Sedikit dari Anda akan sangat berarti
+                </p>
+                <div>
+                    <button
+                        type="button"
+                        class="btn btn-outline-success fade-up duration-3 font-normal my-0 me-2"
+                        data-bs-toggle="modal"
+                        data-bs-target="#rekening"
+                    >
+                        <i class="bi bi-wallet-fill me-1"></i>Lihat No. Rekening</button
+                    ><button
+                        type="button"
+                        class="btn btn-outline-dark fade-up duration-4 font-normal my-0"
+                        data-bs-toggle="modal"
+                        data-bs-target="#qris"
+                    >
+                        <i class="bi bi-qr-code me-1"></i>Lihat kode QRIS
+                    </button>
+                </div>
+                <p class="text-center secondary font-sedang mt-3 fade-up duration-4">
+                    Alhamdulillah saat ini sudah terkumpul <span id="totalInfaq"></span>. Terima kasih atas dukungannya, semoga Allah SWT membalas kebaikan dengan berlipat ganda. 🤲Aamiin
+                </p>
+                <button
+                    class="mdt-btn font-normal mb-3 fade-up duration-5"
+                    data-bs-toggle="modal"
+                    data-bs-target="#konfirmasiModal"
+                >
+                    <i class="bi bi-check2-circle me-2"></i>Konfirmasi ke Panitia
+                </button>
+            </div>
+            <div id="konfirmasiList" class="my-4 fade-up duration-5"></div>
+        </section>
+    </section>
+    <div class="modal fade" id="qris" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title font-besar primary" id="exampleModalLabel">Kode QRIS Panitia</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="font-sedang abu mb-3">
+                        Scan kode dibawah ini menggunakan M-Banking atau E-Wallet Kesayangan Anda
+                    </p>
+                    <div><img style="width: 65%; height: auto" src="assets/img/qris.webp" alt="" /></div>
+                    <p class="abu fst-italic font-normal mt-2 text-start">* Nominal bebas minimal Rp 1</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-secondary font-sedang" data-bs-dismiss="modal">
+                        Kembali ke Undangan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="rekening" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title font-besar primary" id="exampleModalLabel">Nomor Rekening Panitia</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body text-center">
+                                    <img
+                                        class="potorek"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/2/2e/BRI_2020.svg"
+                                        alt=""
+                                    />
+                                    <p class="mb-1 font-sedang">a.n. Yayasan Al-Ikhwan</p>
+                                    <p class="h5 fw-bold font-sedang">75838637363</p>
+                                    <button class="btn btn-outline-secondary btn-sm font-normal">Salin Nomor</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body text-center">
+                                    <img
+                                        class="potorek"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD55a8Qe28T83fYzjQYN1OynHljfAcP0Fy1Q&s"
+                                        alt=""
+                                    />
+                                    <p class="mb-1 font-sedang">a.n. Yayasan Al-Ikhwan</p>
+                                    <p class="h5 fw-bold font-sedang">98762525</p>
+                                    <button class="btn btn-outline-secondary btn-sm font-normal">Salin Nomor</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body text-center">
+                                    <img
+                                        class="potorek"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/SeaBank.svg/1200px-SeaBank.svg.png"
+                                        alt=""
+                                    />
+                                    <p class="mb-1 font-sedang">a.n. Yayasan Al-Ikhwan</p>
+                                    <p class="h5 fw-bold font-sedang">65260098</p>
+                                    <button class="btn btn-outline-secondary btn-sm font-normal">Salin Nomor</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-secondary font-sedang" data-bs-dismiss="modal">
+                        Kembali ke Undangan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="modal fade" id="konfirmasiModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 shadow-lg">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold font-besar">Konfirmasi Infaq/ Shodaqoh</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="konfirmasiForm">
+                        <div class="mb-1">
+                            <label class="form-label abu font-sedang">Nama (Boleh dikosongkan)</label
+                            ><input type="text" id="munfiq" class="form-control" />
+                        </div>
+                        <div class="my-2">
+                            <label class="form-label abu font-sedang">Bank Tujuan</label
+                            ><select id="banktujuan" class="form-select abu font-sedang" required>
+                                <option value="">-- Pilih --</option>
+                                <option value="BRI">BRI</option>
+                                <option value="BCA">BCA</option>
+                                <option value="QRIS">QRIS</option>
+                                <option value="Seabank">Seabank</option>
+                            </select>
+                        </div>
+                        <div class="mb-1">
+                            <label class="form-label abu font-sedang">Nominal Infaq/ Shodaqoh</label
+                            ><input type="number" id="nominal" class="form-control" rows="3" required />
+                        </div>
+                        <div class="text-end mt-3">
+                            <button type="submit" class="btn btn-success btn-sm">
+                                <i class="bi bi-whatsapp me-1"></i>Konfirmasi sekarang
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slide" data-index="5">
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kiri fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kanan fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kiri fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kanan fade-down duration-5" />
+        <div class="container-section-overflow">
+            <h2 class="mb-4 latin display-4 primary fade-down duration-4">Doa & ucapan</h2>
+            <p class="secondary font-sedang fade-down duration-3">Mari ciptakan euforia kebahagiaan bersama untuk meramaikan momen istimewa ini 🎉 </p>
+            <button class="mdt-btn fade-up duration-4" data-bs-toggle="modal" data-bs-target="#rsvpModal">
+                <i class="bi bi-pencil-fill me-1"></i>Posting Ucapan
+            </button>
+            <div id="rsvpSummary" class="font-normal text-center my-2 primary mt-5 fade-up duration-3"></div>
+            <div id="rsvpList" class="row g-2 justify-content-center mb-4 pb-3 rounded"></div>
+        </div>
+    </section>
+    <section class="slide" data-index="6">
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kiri fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kanan fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kiri fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kanan fade-down duration-5" />
+        <section id="galeri" class="container-section-overflow">
+            <div class="container">
+                <div class="text-center mb-4 latin display-3 primary fade-down duration-4">Dokumentasi & Galeri</div>
+                <p class="font-sedang secondary mb-3 fade-down duration-3">Momen indah tak terlupakan</p>
+                <div id="galleryContainer" class="row g-3"></div>
+            </div>
+        </section>
+    </section>
+    <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0 shadow-none text-center">
+      <img id="lightboxImage" src="" class="img-fluid rounded shadow-lg" alt="Galeri Full" />
+
+      <!-- Tambahin caption di sini -->
+      <p id="lightboxCaption" class="text-white font-besar mt-2 mb-4"></p>
+
+      <div class="mt-2">
+        <button
+          type="button"
+          class="btn btn-sm btn-light opacity-75 px-2 rounded-pill shadow-sm font-normal"
+          data-bs-dismiss="modal"
+        >
+          <i class="bi bi-x-lg me-1 text-dark"></i>Tutup
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+    <section class="slide" data-index="7">
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kiri fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kanan fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kiri fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kanan fade-down duration-5" />
+        <section id="kontak">
+            <div class="container container-section-overflow">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-6">
+                        <h3 class="mb-4 display-3 latin primary fade-down duration-4">Kontak Panitia</h3>
+                        <p class="secondary mb-3 font-sedang fade-down duration-3">
+                            Untuk informasi lebih lanjut silakan hubungi kami melalui:
+                        </p>
+                        <ul class="list-unstyled">
+                            <li
+                                class="mb-3 d-flex align-items-center font-sedang secondary text-end fade-up duration-2"
+                            >
+                                <span class="btn btn-dark btn-sm rounded-circle me-3 shadow-sm"
+                                    ><i class="bi bi-telephone-fill text-white"></i></span
+                                ><a href="tel:+6285156850068" class="text-decoration-none secondary font-sedang"
+                                    >+62 851-5685-0068</a
+                                >
+                            </li>
+                            <li class="mb-3 d-flex align-items-center fade-up duration-3">
+                                <span class="btn btn-success btn-sm rounded-circle me-3 shadow-sm font-sedang secondary"
+                                    ><i class="bi bi-whatsapp text-white"></i></span
+                                ><a
+                                    href="https://wa.me/6285156850068"
+                                    target="_blank"
+                                    class="text-decoration-none font-sedang secondary"
+                                    >Chat WhatsApp</a
+                                >
+                            </li>
+                            <li class="mb-3 d-flex align-items-center text-start fade-up duration-4">
+                                <span class="btn btn-info btn-sm rounded-circle me-3 shadow-sm font-sedang secondary"
+                                    ><i class="bi bi-geo-alt-fill text-white"></i></span
+                                ><span class="secondary font-sedang"
+                                    >Jl. jalan tg margasari jgn lupa pulangnya beli lapis</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <hr class="hr"/>
+                    <!-- Tombol buka modal -->
+                    <section class="text-center my-5">
+                      <h2 class="latin display-4 primary fade-up duration-4">Sebarkan Undangan 📢</h2>
+                      <p class="secondary font-sedang mb-1 fade-up duration-4">Bagikan/ Share momen kebahagiaan dan penuh berkah ini kepada keluarga, saudara, kerabat, dan teman Kamu ✨.</br>
+                      <span class="abu d-inline-block mt-2 fade-up duration-5">Klik tombol dibawah ini</span></p>
+                      <button class="btn btn-success font-sedang fade-up duration-5" data-bs-toggle="modal" data-bs-target="#shareModal">
+                        <i class="bi bi-whatsapp"></i> Share via WhatsApp
+                      </button>
+                    </section>
+                    <hr class="hr"/>
+                    <div class="col-md-6 text-center">
+                        <h3 class="fade-up duration-5 mb-3 primary display-3 latin">Terima Kasih</h3>
+                        <p class="secondary mb-3 font-sedang fade-up duration-4">
+                            Atas doa, dukungan, dan kehadiran Bapak/Ibu/Saudara/i, kami ucapkan terima kasih yang
+                            sebesar-besarnya. Semoga Allah SWT membalas segala kebaikan dengan pahala yang berlipat
+                            ganda.
+                        </p>
+                        <div class="fst-italic secondary font-sedang">Wassalamu’alaikum warahmatullahi wabarakatuh</div>
+                    </div>
+                </div>
+                <div class="text-center mt-5"><small class="abu font-normal">© 2025 Haflah MDT Al-Ikhwan</small></div>
+            </div>
+        </section>
+    </section>
+</div>
+<!-- Modal Input Nama -->
+<div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title w-100" id="shareModalLabel">Masukkan Nama Penerima</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input type="text" id="shareNameInput" class="form-control mb-3" placeholder="Contoh: Hisyam aziz" />
+        <button class="btn btn-success w-100" id="generateShareBtn">
+          <i class="bi bi-whatsapp"></i> Bagikan sekarang
+        </button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+    <section class="slide" data-index="9">
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kiri fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-atas-kanan fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kiri fade-down duration-5" />
+        <img src="assets/img/corner.webp" class="corner pojok-bawah-kanan fade-down duration-5" />
+        <div class="container text-center" style="margin-top: -4rem;">
+            <h2 class="mb-1 latin display-3 primary fade-up duration-2">Buat Foto Overlay</h2>
+            <p class="secondary font-sedang fade-up duration-3 mb-2">Mari bersuka ria bersama <br/> Upload Selfie terbaikmu disini</p>
+            
+            <div class="mb-2 fade-up duration-4 mx-auto text-center w-75">
+                <input type="file" id="uploadtwb" class="form-control font-sedang " accept="image/*">
+            </div>
+            
+            <canvas class="fade-up duration-5" id="canvas" width="1080" height="1350"></canvas>
+            
+            <div class="mt-2 d-flex gap-2 justify-content-center fade-up duration-5">
+                <button id="download" class="btn btn-sm btn-outline-primary font-sedang "><i class="bi bi-download"></i> Download</button>
+                <button id="share" class="btn btn-sm btn-outline-success font-sedang "><i class="bi bi-share"></i> Bagikan</button>
+            </div>
+        </div>
+    </section>
+
+<div class="navbot-wrap">
+    <div id="navbot" class="navbot hidden" aria-hidden="true">
+        <button class="navbot-btn alan" data-target="1">
+            <i class="bi bi-envelope"></i>
+            <div style="font-size: 11px">Undangan</div></button
+        ><button class="navbot-btn alan" data-target="2">
+            <i class="bi bi-calendar-event"></i>
+            <div style="font-size: 11px">Acara</div></button
+        ><button class="navbot-btn alan" data-target="3">
+            <i class="bi bi-geo-alt"></i>
+            <div style="font-size: 11px">Lokasi</div></button
+        ><button class="navbot-btn alan" data-target="8">
+            <i class="bi bi-person-vcard"></i>
+            <div style="font-size: 11px">Wisudawan</div></button
+        ><button class="navbot-btn alan" data-target="9">
+            <i class="bi bi-camera2"></i>
+            <div style="font-size: 11px">MDT Booth</div></button
+        ><button class="navbot-btn alan" data-target="4">
+            <i class="bi bi-heart"></i>
+            <div style="font-size: 11px">Infaq</div></button
+        ><button class="navbot-btn alan" data-target="5">
+            <i class="bi bi-check2-circle"></i>
+            <div style="font-size: 11px">RSVP</div></button
+        ><button class="navbot-btn alan" data-target="6">
+            <i class="bi bi-images"></i>
+            <div style="font-size: 11px">Galeri</div></button
+        ><button class="navbot-btn alan" data-target="7">
+            <i class="bi bi-emoji-smile"></i>
+            <div style="font-size: 11px">Thanks</div>
+        </button>
+    </div>
+</div>
+<section class="modal fade" id="rsvpModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 shadow-lg">
+            <div class="modal-header border-0">
+                <h5 class="modal-title fw-bold font-besar">Kirim Ucapan & Doa Terbaik</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="rsvpForm">
+                    <div class="mb-1">
+                        <label class="form-label abu font-sedang">Nama</label
+                        ><input type="text" id="nama" class="form-control" required />
+                    </div>
+                    <div class="mb-1">
+                        <div class="form-check form-check-inline">
+                            <input
+                                class="form-check-input"
+                                type="radio"
+                                name="jenisKelamin"
+                                id="laki"
+                                value="laki"
+                                required
+                            /><label class="form-check-label abu font-sedang" for="laki">Laki-laki</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input
+                                class="form-check-input"
+                                type="radio"
+                                name="jenisKelamin"
+                                id="perempuan"
+                                value="perempuan"
+                                required
+                            /><label class="form-check-label abu font-sedang" for="perempuan">Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="my-2">
+                        <label class="form-label abu font-sedang">Konfirmasi Kehadiran</label
+                        ><select id="status" class="form-select abu font-sedang" required>
+                            <option value="">-- Pilih --</option>
+                            <option value="hadir">Hadir</option>
+                            <option value="tidak hadir">Tidak Hadir</option>
+                            <option value="masih bingung">Masih Bingung</option>
+                            <option value="insya Allah">Insya Allah</option>
+                        </select>
+                    </div>
+                    <div class="mb-1">
+                        <label class="form-label abu font-sedang">Ucapan & Doa</label
+                        ><textarea id="ucapan" class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="text-end mt-3">
+                        <button type="submit" class="btn btn-success btn-sm">
+                            <i class="bi bi-send me-1"></i>Kirim ucapan
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="modal fade" id="replyModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-3 shadow">
+            <div class="modal-body">
+                <form id="replyForm">
+                    <div class="mb-1">
+                        <textarea
+                            id="replyText"
+                            class="form-control"
+                            rows="3"
+                            placeholder="Ketik balasan Anda disini"
+                        ></textarea>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center text-align-center mt-3">
+                        <button id="btn-activate" type="button" class="btn btn-outline-secondary btn-sm">
+                            <i class="bi bi-lock-fill me-1"></i>Aktifkan tombol</button
+                        ><button id="btn-reply" type="submit" class="btn btn-success btn-sm disabled">
+                            <i class="bi bi-send me-1"></i>Kirim balasan
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
