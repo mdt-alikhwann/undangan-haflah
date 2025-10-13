@@ -690,6 +690,21 @@ html {
  height: 100px;
  z-index: 3;
  pointer-events: none;
+ transition: transform 0.3s ease;
+ animation: floatWind 6s ease-in-out infinite;
+}
+.corner {
+  animation: floatWind 6s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Gunakan var(--mirror) agar mirror tidak hilang */
+@keyframes floatWind {
+  0%   { transform: var(--mirror) rotate(0deg) translate(0, 0) scale(1); }
+  25%  { transform: var(--mirror) rotate(1deg) translate(3px, -2px) scale(1.02); }
+  50%  { transform: var(--mirror) rotate(-1.2deg) translate(-3px, 3px) scale(0.98); }
+  75%  { transform: var(--mirror) rotate(0.5deg) translate(2px, -1px) scale(1.01); }
+  100% { transform: var(--mirror) rotate(0deg) translate(0, 0) scale(1); }
 }
 .pojok-atas-kiri {
  top: 0;
@@ -796,6 +811,7 @@ html {
   width: 100%;
  }
 }
+
 /* 🔹 Canvas transparan dan di atas semua elemen */
 #fireworks {
   position: fixed;
