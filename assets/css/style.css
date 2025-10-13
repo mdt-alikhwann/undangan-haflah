@@ -710,25 +710,21 @@ html {
  top: 0;
  left: 0;
  --mirror: scale(1, 1);
- animation-delay: 0s;
 }
 .pojok-atas-kanan {
  top: 0;
  right: 0;
  --mirror: scale(-1, 1);
- animation-delay: 1s;
 }
 .pojok-bawah-kiri {
  bottom: 0;
  left: 0;
  --mirror: scale(1, -1);
- animation-delay: 2s;
 }
 .pojok-bawah-kanan {
  bottom: 0;
  right: 0;
  --mirror: scale(-1, -1);
- animation-delay: 3s;
 }
 #leaf-wrapper {
  position: fixed;
