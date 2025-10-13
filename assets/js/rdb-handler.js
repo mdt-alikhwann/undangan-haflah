@@ -24,6 +24,8 @@
 
   const app = initializeApp(firebaseConfig);
   const db = getDatabase(app);
+    // 🔹 Referensi ke data absensi / kehadiran
+  const attendanceRef = ref(db, "attendance");
 
   const rsvpForm = document.getElementById("rsvpForm");
   const rsvpList = document.getElementById("rsvpList");
@@ -33,6 +35,42 @@
   // ==========================================================
 // 🔹 Fungsi utilitas umum
 // ==========================================================
+  const params = new URLSearchParams(window.location.search);
+  const namaTamu = params.get("nama")?.trim().toLowerCase();
+
+if (namaTamu) {
+  console.log("👀 Memantau kehadiran untuk:", namaTamu);
+
+  onValue(attendanceRef, (snapshot) => {
+    if (!snapshot.exists()) return;
+
+    const data = snapshot.val();
+    let ditemukan = false;
+
+    for (const id in data) {
+      if (data[id].nama?.toLowerCase() === namaTamu) {
+        ditemukan = true;
+        const lanjut = confirm(`Bpk/Ibu/Sodara/i ${data[id].nama} sudah hadir. Ingin melanjutkan membuka undangan?`);
+        if (lanjut) {
+          // Bisa lanjutkan buka undangan (misal di halaman ini)
+          console.log("🔓 Melanjutkan membuka undangan...");
+          // Bisa tambahkan logika lain jika perlu
+        } else {
+          // Redirect ke thankyou.html
+          window.location.href = "thanks.html";
+        }
+        break;
+      }
+    }
+
+    // Jika tidak ditemukan, berarti tamu baru, bisa lanjut normal
+    if (!ditemukan) {
+      console.log("Tamu belum tercatat, lanjut normal...");
+    }
+  });
+} else {
+  console.warn("❌ Nama tamu tidak ditemukan di URL.");
+}
 
 // Ambil inisial dari nama, max 2 huruf
 function getInitials(nama) {
@@ -500,3 +538,4 @@ onValue(konfirmasiQuery, (snapshot) => {
       });
 
   });
+
