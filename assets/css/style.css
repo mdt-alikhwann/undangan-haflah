@@ -670,19 +670,19 @@ html {
  animation: fadeDown 1s ease forwards;
 }
 .duration-1 {
- animation-duration: 1s !important;
-}
-.duration-2 {
  animation-duration: 2s !important;
 }
-.duration-3 {
+.duration-2 {
  animation-duration: 3s !important;
 }
-.duration-4 {
+.duration-3 {
  animation-duration: 4s !important;
 }
-.duration-5 {
+.duration-4 {
  animation-duration: 5s !important;
+}
+.duration-5 {
+ animation-duration: 6s !important;
 }
 .corner {
  position: absolute;
