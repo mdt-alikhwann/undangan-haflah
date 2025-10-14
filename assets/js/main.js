@@ -9,6 +9,6 @@ import './galery-handler.js';
 import './timelane-handler.js';
 import './share-handler.js';
 import './firework.js';
+import './reply-rsvp.js'; 
 import './rdb-handler.js';
 import './controller.js';
-import './reply-rsvp.js';
