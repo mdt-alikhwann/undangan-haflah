@@ -3,7 +3,7 @@ const openBtn = document.getElementById("openBtn");
 const music = document.getElementById("bgMusic");
 const qrBtn = document.getElementById("qrBtn");
 let isMainPlaying = false;
-music.volume = 0.1;
+
 
 function playMainMusic() {
   music.play();
@@ -34,6 +34,7 @@ musicBtn.style.display = "none";
 const musicWsdTrigger = document.getElementById("mscWisuda");
 const musicWisuda = document.getElementById("mscWisudaAudio");
 let isWisudaPlaying = false;
+musicWisuda.volume = 0.6;
 
 function playWisudaMusic() {
   pauseMainMusic(); // matikan musik utama
