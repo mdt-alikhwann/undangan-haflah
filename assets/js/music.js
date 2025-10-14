@@ -3,6 +3,7 @@ const openBtn = document.getElementById("openBtn");
 const music = document.getElementById("bgMusic");
 const qrBtn = document.getElementById("qrBtn");
 let isMainPlaying = false;
+music.volume = 0.8;
 
 function playMainMusic() {
   music.play();
